@@ -11,35 +11,63 @@
         android:id="@+id/textView"
         android:layout_width="100dp"
         android:layout_height="36dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="45dp"
         android:text="Hello World!"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/changeTextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/secondButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="152dp"
         android:text="Button"
         android:textColor="@color/design_default_color_secondary"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="546dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeTextButton" />
 
     <Button
         android:id="@+id/changeTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="7dp"
         android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/secondButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/thirdbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="61dp"
+        android:background="#FF5722"
+        app:backgroundTint="#FF5722"
+
+        android:text="Button"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
